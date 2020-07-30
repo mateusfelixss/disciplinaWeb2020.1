@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="">
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuario</title>
+</head>
+
+<body>
+    <h1>Confira aqui os itens que podem ser excluidos</h1> 
+    
+     <form action="cadastro.html">
+        <h3>Dados Basicos</h3>
+        <label for="name">Nome Completo:</label><br>
+        <input type="text" id="name" disabled name="name" size="30px"  value="Mateus Felix S Silva"><br>
+        <br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" disabled name="email" size="30px"  value="mateus@mateus.com"> <br>
+        <br>
+
+        <label for="password">Crie uma senha com no minimo 8 caracteres e maximo de 16:</label><br>
+        <input type="password" id="password" disabled name="password"  value="12345678" maxlength="16" minlength="8"><br>
+        <br>
+
+        <label for="password">Digite novamente sua senha:</label><br>
+        <input type="password" id="password" disabled name="password"  value="12345678" maxlength="16" minlength="8"><br>
+        <br>
+
+        <label for="nasc">Data de Nascimento</label><br>
+        <input type="date" id="nasc" disabled name="nasc"  value="1997-12-05"><br>
+        <br>
+
+        <h3>Endereço</h3>
+
+        <label for="cep">Digite o seu CEP</label><br>
+        <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}"  value="60000-000">
+        <input type="button" name="" id="excluir" value="Excluir item" onclick="msg()"> <br>
+        <br>
+
+        <label for="address">Rua/Avenida/Praça</label><br>
+        <input type="text" id="address"  name="address" size="30px" value="Rua dos Alfeneiros">
+        <input type="button" name="" id="excluir" value="Excluir item" onclick="msg()"><br>
+        <br>
+        
+        <label for="bairro">Bairro</label><br>
+        <input type="text" id="bairro" name="bairro"  value="Surrey">
+        <input type="button" name="" id="excluir" value="Excluir item" onclick="msg()"><br>
+        <br>
+
+        <label for="number">Numero da Residencia</label><br>
+        <input type="number" id="number" name="number" min="0"  value="4">
+        <input type="button" name="" id="excluir" value="Excluir item" onclick="msg()"><br>
+        <br>
+
+        <p>Tipo de Residencia:</p>
+        <label for="casa">Casa</label>
+        <input type="radio" id="casa" checked  name="tipoResidencia">
+        <input type="button" name="" id="excluir" value="Excluir item" onclick="msg()"><br>
+        <label for="apart">Apartamento</label>
+        <input type="radio" id="apart"  name="tipoResidencia">
+        <input type="button" name="" id="excluir" value="Excluir item" onclick="msg()"><br>
+        <label for="outro">Outro</label>
+        <input type="radio" id="outro"  name="tipoResidencia">
+        <input type="button" name="" id="excluir" value="Excluir item" onclick="msg()"><br>
+        <br>
+
+        <h3>Dados Institucionais</h3>
+        <label for="matricula">Matricula</label><br>
+        <input type="text" name="matricula" disabled id="matricula" pattern="[0-9]{6}" value="123456"><br>
+        <br>
+
+        <p>Curso Atual</p>
+        <label for="cc">Ciencia da Computação</label>
+        <input type="radio" disabled  name="curso" id="cc"><br>
+
+        <label for="es">Engenharia de Software</label>
+        <input type="radio" disabled checked name="curso" id="es"><br>
+
+        <label for="ec">Engenharia de Computação</label>
+        <input type="radio" disabled name="curso" id="ec"><br>
+
+        <label for="si">Sistema da Informação</label>
+        <input type="radio" disabled name="curso" id="si"><br>
+
+        <label for="redes">Redes de Computadores</label>
+        <input type="radio" disabled name="curso" id="redes"><br>
+
+        <label for="dd">Desinger Digital</label>
+        <input type="radio" disabled name="curso" id="dd"><br>
+        <br>
+
+        <label for="cpf">CPF</label><br>
+        <input type="text" disabled name="cpf" id="cpf" value="123456789"><br>
+        <br>
+
+        <label for="photoProfile">Escolha uma foto de perfil</label><br>
+        <input type="file" id="photoProfile"  name="imgProfile"><br>
+        <br><br>
+
+        <label for="submit">Cadastrar novo aluno</label><br>
+        <input type="submit" id="submit" name="enviar fomulario"><br>
+        <br>
+        
+        <script>
+            function msg(){
+                alert("Item excluido com sucesso!")
+            }
+        </script>
+
+    </form>
+</body>
+</html>
