@@ -1,0 +1,89 @@
+body{
+    background-image: url(praia.jpeg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+    position: absolute;
+    align-items: center;
+    
+}
+/*
+HEX : #a1c2c7
+RGB : 161, 194, 199
+HSL  : 187, 25%, 70%
+*/
+.container{
+    background-color: rgba(161, 194, 199, 0.5);	
+    margin-left: 390px;
+    margin-right: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border: 0px;
+}
+
+.box{
+    background-color: brown;
+    width: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+h2{
+    font-style: italic;
+    font-weight: bolder;
+    padding-left: 45%;
+}
+
+.button{
+    width: 407px;
+    height: 28px;
+    font-weight: bolder;
+    cursor: pointer;  
+    background-color: rgb(161, 194, 199); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    
+}
+
+.answer{
+    width: 400px;
+    height: 20px;
+
+}
+.drop-donw{
+    width: 408px;
+    height: 29px;
+}
+
+.description{
+    width: 400px;
+    height: 100px;
+}
+
+.label{
+    font-style: italic;
+    font-weight: bolder;
+}
+.formulario{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*.formulario{
+    padding-left: 25%;
+   
+}
+.label{
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+
+    background-color: violet;  
+    align-items: center;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}*/

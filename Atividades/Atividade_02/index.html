@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Registro de Avaliação</h2>
+
+    <div class="container">
+   <!--     <div class="box"> -->
+            <form class="formulario">
+                <label class="label" for="name">Nome Completo:</label><br>
+                <input type="text" class="answer" id="name" placeholder="nome" size="30px" name="name" value=""><br>
+                <br>
+
+                <label class="label" for="email">Email:</label><br>
+                <input type="email" class="answer" id="email" size="30px" placeholder="exemplo@exemplo.com" name="email" value=""> <br>
+                <br>
+
+                <label class="label" for="reserva">Numero da Reserva:</label><br>
+                <input type="text" class="answer" name="reserva" size="30px" id="reserva" placeholder="123456" pattern="[0-9]{6}" value=""><br>
+                <br>
+
+                <label class="label" for="room">Tipo de Acomodação:</label><br>
+                <select class="drop-donw" name="room" id="room" value="">
+                    <option  value="qs">Quarto Simples</option>
+                    <option  value="qd">Quarto Duplo</option>
+                    <option  value="qv">Quarto com Varanda</option>
+                    <option  value="sm">Suite Master</option>
+                </select>
+                <br>
+
+                <br>
+                <label class="label" for="avaliacao">Como voce avalia o nosso serviço</label><br>
+
+                <input type="radio" name="avaliacao" id="otimo">
+                <label for="otimo">Ótimo</label><br>
+
+                <input type="radio" name="avaliacao" id="bom">
+                <label for="bom">Bom</label><br>
+
+                <input type="radio" name="avaliacao" id="regular">
+                <label for="regular">Regular</label><br>
+
+                <input type="radio" name="avaliacao" id="ruim">
+                <label for="ruim">Ruim</label><br>
+
+                <input type="radio" name="avaliacao" id="pessimo">
+                <label for="pessimo">Pessimo</label><br>
+                <br>
+
+                <label class="label" for="">Quais dos serviços abaixo mais lhe agradou:</label><br>
+                <input type="checkbox" name="atendimento" id="atendimento">
+                <label for="atendimento">Atendimento</label>
+                <br>
+
+                <input type="checkbox" name="conforto" id="conforto">
+                <label for="conforto">Conforto</label>
+                <br>
+
+                <input type="checkbox" name="preco" id="preco">
+                <label for="preco">Preço</label>
+                <br>
+
+                <input type="checkbox" name="alimentacao" id="alimentacao">
+                <label for="alimentacao">Alimentação</label>
+                <br>
+
+                <br>
+                <label class="label" for="descricao">Sugestão, Crítica, Elogios... (opcional)</label><br>
+                <textarea class="description" placeholder="Deixe sua opinião" name="descricao" id="descricao" cols="30" rows="10"></textarea><br>
+                
+                <input class="button" value="Enviar Avaliação" type="submit" name="enviar" id="submit">
+            </form>
+ <!--     </div>   --> 
+    </div>
+    
+</body>
+
+</html>
